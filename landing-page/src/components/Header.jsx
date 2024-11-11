@@ -1,32 +1,32 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <div className="container mx-auto">
       <div className="flex items-center justify-between py-5">
-        <div className="header-title text-3xl font-semibold pr-14">React Landing Page</div>
+        <div className="header-title text-3xl font-semibold pr-14">
+          <Link to="/"> React Landing Page</Link>
+        </div>
         <div className="header-list text-xl text-gray-500">
           <ul className="flex">
             <li>
-              <a href="">Featurs</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="">About</a>
+              <Link to="/features">Featurs</Link>
             </li>
             <li>
-              <a href="">Services</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="">Gallery</a>
+              <Link to="/servicesus">Services</Link>
             </li>
             <li>
-              <a href="">Testimonials</a>
+              <Link to="/team">Team</Link>
             </li>
             <li>
-              <a href="">Team</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
